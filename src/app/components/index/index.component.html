@@ -2,7 +2,8 @@
   <app-avatar></app-avatar>
   <clr-tabs>
     <clr-tab>
-      <button clrTabLink id="link1">Datos personales
+      <button clrTabLink id="link1">
+        about
         <clr-icon shape="happy-face"></clr-icon>
       </button>
       <clr-tab-content id="content1" *clrIfActive>
@@ -10,14 +11,17 @@
       </clr-tab-content>
     </clr-tab>
     <clr-tab>
-     <button clrTabLink>Gustos musicales <clr-icon shape="music-note"></clr-icon>
+     <button clrTabLink>
+       music
+       <clr-icon shape="music-note"></clr-icon>
       </button>
       <clr-tab-content *clrIfActive="true">
         <app-music></app-music>
       </clr-tab-content>
     </clr-tab>
     <clr-tab>
-      <button clrTabLink>Películas favoritas
+      <button clrTabLink>
+        films
         <clr-icon shape="film-strip"></clr-icon>
       </button>
       <clr-tab-content *clrIfActive="true">

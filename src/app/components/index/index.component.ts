@@ -1,6 +1,6 @@
 import '@clr/icons';
 import '@clr/icons/shapes/all-shapes';
-import { Component, OnInit } from '@angular/core';
+import { HostListener, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-index',
@@ -10,8 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class IndexComponent implements OnInit {
 
   constructor() { }
-
+  screenHeight: number;
+  screenWidth: number;
   ngOnInit() {
   }
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+  }
 }
