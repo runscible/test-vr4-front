@@ -1,0 +1,33 @@
+<div class="login-wrapper">
+  <form class="login">
+    <section class="title">
+      login page
+    </section>
+    <div class="login-group">
+      <clr-input-container>
+        <label class="clr-sr-only">Username</label>
+        <input
+          required
+          [maxLength]="15"
+          type="text"
+          name="username"
+          clrInput placeholder="Username"
+          [(ngModel)]="form.username"/>
+      </clr-input-container>
+      <clr-password-container>
+        <label class="clr-sr-only">Password</label>
+        <input
+          required
+          [maxLength]="15"
+          type="password"
+          name="password"
+          clrPassword placeholder="Password"
+          [(ngModel)]="form.password"/>
+      </clr-password-container>
+      <!--<div class="error active">-->
+        <!--Invalid user name or password-->
+      <!--</div>-->
+      <button (click)="login()" class="btn btn-primary">login</button>
+    </div>
+  </form>
+</div>

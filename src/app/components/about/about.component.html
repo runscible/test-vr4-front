@@ -1,0 +1,17 @@
+<div class="container">
+ <div>Edit Bio <clr-icon shape="highlighter" (click)="edit()" ></clr-icon></div>
+  <div *ngIf="!editing">{{ aboutInfo }}</div>
+</div>
+<div *ngIf="editing">
+   <clr-textarea-container>
+      <textarea
+        clrTextarea
+        [(ngModel)]="aboutInfo"
+        name="description"
+        required>
+      </textarea>
+   </clr-textarea-container>
+  <button
+    class="btn btn-primary"
+    (click)="save()">Save</button>
+</div>

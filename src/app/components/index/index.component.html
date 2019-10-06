@@ -1,0 +1,30 @@
+<div class="container">
+  <app-avatar></app-avatar>
+  <clr-tabs>
+    <clr-tab>
+      <button clrTabLink id="link1">Datos personales
+        <clr-icon shape="happy-face"></clr-icon>
+      </button>
+      <clr-tab-content id="content1" *clrIfActive>
+        <app-about></app-about>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+     <button clrTabLink>Gustos musicales <clr-icon shape="music-note"></clr-icon>
+      </button>
+      <clr-tab-content *clrIfActive="true">
+        <app-music></app-music>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+      <button clrTabLink>Películas favoritas
+        <clr-icon shape="film-strip"></clr-icon>
+      </button>
+      <clr-tab-content *clrIfActive="true">
+        <app-films></app-films>
+      </clr-tab-content>
+    </clr-tab>
+  </clr-tabs>
+</div>
+
+

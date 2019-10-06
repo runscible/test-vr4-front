@@ -1,0 +1,13 @@
+<form class="container">
+  <img src="../../../assets/img/avatar.jpg" alt="">
+  <input
+    type="file"
+    (change)="changeAvatar($event)"
+    #fileInput>
+  <button
+    class="btn btn-success"
+    (click)="fileInput.click()">Cambiar Avatar</button>
+  <button
+    class="btn btn-success"
+    (click)="onSubmit()">confirmar</button>
+</form>
